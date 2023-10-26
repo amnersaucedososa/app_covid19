@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "fef5a442-1968-473f-8c2f-3b12db31c0bc",
+		"name": "PruebaNodejs_ReactNative",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4666568"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/empleado/index",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleado",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Nombre del Empleado\",\r\n  \"puesto\": \"Puesto del Empleado\",\r\n  \"vacuna\": \"Tipo de Vacuna\",\r\n  \"fecha_primera_dosis\": \"2023-10-30\", // Fecha de la primera dosis en formato YYYY-MM-DD\r\n  \"estado_vacunacion\": \"En Riesgo\" // Puede ser \"Protegido,\" \"En Progreso\" o \"En Riesgo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/empleado/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleado",
+						"create"
+					]
+				},
+				"description": "create"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"test\",\r\n  \"puesto\": \"Nuevo Puesto del Empleado\",\r\n  \"vacuna\": \"Nuevo Tipo de Vacuna\",\r\n  \"fecha_primera_dosis\": \"2023-11-15\", // Nueva fecha de la primera dosis en formato YYYY-MM-DD\r\n  \"estado_vacunacion\": \"Protegido\" // Puede ser \"Protegido,\" \"En Progreso\" o \"En Riesgo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/empleado/update/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleado",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/empleado/delete/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleado",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
